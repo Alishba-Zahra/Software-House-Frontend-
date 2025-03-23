@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevStudio AZ</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: teal;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            margin-top: 30px;
+            background-color: #c7b859;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            margin-right: 20px;
+            padding-left: 30px;
+        }
+        .logo img{
+    width:80px;
+    height: 65px;
+}
+
+nav{
+    font-size: 20px;
+}
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #045D5D;
+        }
+
+        .actions button {
+            background-color: #045D5D;
+            color: #c7b859;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        
+        .actions button:hover {
+            background-color: white;
+            color: #045D5D;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #015553;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 15px;
+            z-index: 1001;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+        }
+
+        .social-icons a img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        section {
+            padding: 100px 20px 50px;
+            text-align: center;
+            margin-bottom: 10px;
+            background: url('4b.png');
+        }
+        section h2{
+            
+             font-size: 40px;
+            margin-bottom: 50px;
+            color: #c7b859;
+        }
+        
+        .experts-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .expert {
+            background-color:#045D5D ;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .expert:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            background-color: #1f2937 ;
+        }
+
+        .expert img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+
+        .expert h3 {
+            font-size: 18px;
+            color: #c7b859;
+            margin: 10px 0 5px;
+        }
+
+        .expert p {
+            font-size: 14px;
+            color: #c7b859;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #1f2937;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+       footer a{
+    color:#c7b859;
+}
+    </style>
+</head>
+<body>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="fb.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="ista.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="in.png" alt="LinkedIn">
+        </a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="DevStudio AZ Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Experts.html">Experts</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <button onclick="window.location.href='Contact.html'">Contact Us</button>
+            <button onclick="window.location.href='Login.html'">Login</button>
+        </div>
+    </header>
+    <br><br>
+    <br><br>
+    <section id="experts">
+        <h2>OUR EXPERTS</h2>
+        <div class="experts-list">
+            <div class="expert">
+                <a href="ZeynepYildizResume.pdf" target="_blank">
+                <img src="E1.png" alt="Zeynep Yildiz"></a>
+                <h3>Zeynep Yildiz</h3>
+                <p>Expert in Web Development.</p>
+            </div>
+            <div class="expert">
+                <a href="NoshabaJahngirResume.pdf" target="_blank">
+            <img src="E2.png" alt="Noshaba Jahngir"></a>
+            <h3>Noshaba Jahngir</h3>
+            <p>Specialist in App Development.</p>
+        </div>
+        <div class="expert">
+            <a href="MirajSultanResume.pdf" target="_blank">
+            <img src="E3.png" alt="Miraj Sultan"></a>
+            <h3>Miraj Sultan</h3>
+            <p>UI/UX Designer with 10 years of experience.</p>
+        </div>
+        <div class="expert">
+            <a href="HilalAhmedResume.pdf" target="_blank">
+            <img src="E4.png" alt="Hilal Ahmed"></a>
+            <h3>Hilal Ahmed</h3>
+            <p>SEO and Digital Marketing Guru  with 4 years of Experience.</p>
+        </div>
+        <div class="expert">
+            <a href="ZaviyarBaderResume.pdf" target="_blank">
+            <img src="E5.png" alt="Zaviyar Badar"></a>
+            <h3>Zaviyar Badar</h3>
+            <p>Graphic Designer and Content Creator with 3 years of Experience.</p>
+        </div>
+        <div class="expert">
+            <a href="IsmailShahResume.pdf" target="_blank">
+            <img src="E6.png" alt="Ismail Shah"></a>
+            <h3>Ismail Shah</h3>
+            <p>Video Editing and Animation Expert with 2 years of Experience.</p>
+        </div>
+        <div class="expert">
+            <a href="UmaarahQaseemResume.pdf" target="_blank">
+            <img src="E7.png" alt="Umaarah Qaseem"></a>
+            <h3>Umaarah Qaseem</h3>
+            <p>Email Marketing Strategist with 6 years of Experience.</p>
+        </div>
+        <div class="expert">
+            <a href="HaroonShahidResume.pdf" target="_blank">
+            <img src="E8.png" alt="Haroon Shahid"></a>
+            <h3>Haroon Shahid</h3>
+            <p>Social Media Manager with 5 years of Experience.</p>
+        </div>
+        <div class="expert">
+             <a href="MeerHaiderResume.pdf" target="_blank">
+            <img src="E9.png" alt="Meer Haider"></a>
+            <h3>Meer Haider</h3>
+            <p>Full-Stack Developer with 6 years of Experience.</p>
+        </div>
+    
+        </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 <a href="Home.html">DevStudio AZ.</a>All rights reserved.</p>
+    </footer>
+</body>
+</html>

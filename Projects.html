@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevStudio AZ</title> 
+</head>
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: teal; 
+    color: #fff; 
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-top: 30px;
+    background-color:#c7b859;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;   
+}
+
+.logo {
+    margin-right: 20px;
+    padding-left: 30px;
+}
+.logo img{
+    width:80px;
+    height: 65px;
+}
+
+nav{
+    font-size: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color:#045D5D ;
+}
+
+.actions button {
+    background-color:#045D5D ;
+    color: #c7b859;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.actions button:hover {
+    background-color: white;
+    color: #045D5D;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #015553;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:15px;
+    z-index: 1001;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+section {
+    padding: 100px 20px 50px;
+            text-align: center;
+            margin-bottom: 10PX;
+            background:url('4b.png');
+}
+section h2{
+            
+             font-size: 40px;
+            margin-bottom: 50px;
+            color: #c7b859;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .item {
+              background-color:#045D5D ;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            background-color: #1f2937 ;
+        }
+        .item img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+        .item h3 {
+            font-size: 18px;
+            color: #c7b859;
+            margin: 10px 0 5px;
+        }
+        .item p {
+            font-size: 14px;
+            color: #c7b859;
+            margin: 10px 0;
+        }
+ footer {
+    background-color: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer a{
+    color:#c7b859;
+}
+</style>
+<body>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="fb.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="ista.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="in.png" alt="LinkedIn">
+        </a>
+        <a href="icon.pg"></a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="DevStudio AZ Logo">
+        </div>
+        <nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Experts.html">Experts</a></li>
+        <li><a href="Reviews.html">Reviews</a></li>
+    </ul>
+</nav>
+        <div class="actions">
+            <button onclick="window.location.href='contact.html'">Contact Us</button>
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </header>
+    <br><br>
+    <br><br>
+   
+<section>
+    <h2>OUR PROJECTS</h2>
+    <div class="project-list">
+        <div class="item">
+            <a href="https://www.weather.com" target="_blank">
+                <img src="P1.png" alt="Weather Forecast Application">
+            </a>
+            <h3>Weather Forecast Application</h3>
+            <p>Provides accurate weather updates and forecasts worldwide.</p>
+        </div>
+        <div class="item">
+            <a href="https://demo.opencart.com/" target="_blank">
+                <img src="P2.png" alt="E-commerce Website">
+            </a>
+            <h3>E-commerce Website</h3>
+            <p>Responsive platform for online shopping with secure payments.</p>
+        </div>
+        <div class="item">
+            <a href="https://www.myfitnesspal.com" target="_blank">
+                <img src="P3.png" alt="Fitness Tracker App">
+            </a>
+            <h3>Fitness Tracker App</h3>
+            <p>Tracks health metrics and offers workout plans.</p>
+        </div>
+        <div class="item">
+            <a href="https://www.oracle.com/erp" target="_blank">
+                <img src="P4.png" alt="Enterprise ERP Solution">
+            </a>
+            <h3>Enterprise ERP Solution</h3>
+            <p>Streamlines business processes for medium to large enterprises.</p>
+        </div>
+        <div class="item">
+            <a href="https://www.ubereats.com" target="_blank">
+                <img src="P5.png" alt="Food Delivery App">
+            </a>
+            <h3>Food Delivery App</h3>
+            <p>Connects restaurants with customers for hassle-free ordering.</p>
+        </div>
+        <div class="item">
+            <a href="https://www.blackboard.com" target="_blank">
+                <img src="P6.png" alt="Education Management System">
+            </a>
+            <h3>Education Management System</h3>
+            <p>Manages student data, grades, and academic schedules.</p>
+        </div>
+        <div class="item">
+            <a href="https://www.booking.com" target="_blank">
+                <img src="P7.png" alt="Travel Booking Website">
+            </a>
+            <h3>Travel Booking Website</h3>
+            <p>Facilitates flight, hotel, and tour bookings worldwide.</p>
+        </div>
+        <div class="item">
+            <a href="https://www.coinbase.com" target="_blank">
+                <img src="P8.png" alt="Blockchain Payment System">
+            </a>
+            <h3>Blockchain Payment System</h3>
+            <p>Secure and transparent payment solution using blockchain.</p>
+        </div>
+        <div class="item">
+            <a href="https://store.steampowered.com/app/1063730/VR_Game" target="_blank">
+                <img src="P9.png" alt="Virtual Reality Game">
+            </a>
+            <h3>Virtual Reality Game</h3>
+            <p>Immersive VR gaming experience with stunning graphics.</p>
+        </div>
+    </div>
+</section>
+
+    <footer>
+         <p>&copy; 2024 <a href="Home.html">DevStudio AZ.</a>All rights reserved.</p>
+    </footer>
+</body>
+</html>

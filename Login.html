@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign-Up - DevStudio AZ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background:url(2b.png);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .auth-container {
+            background-color: #1f2937;
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .auth-container h2 {
+            color: #c7b859;
+            margin-bottom: 20px;
+        }
+
+        .auth-container button {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .google-btn {
+            background-color:#c7b859 ;
+            color: white;
+        }
+
+        .google-btn:hover {
+            background-color: #045D5D;
+        }
+
+        .facebook-btn {
+            background-color: #c7b859;
+            color: white;
+        }
+
+        .facebook-btn:hover {
+            background-color: #045D5D;
+        }
+
+        form {
+            display: none; /* Hide forms by default */
+            margin-top: 20px;
+        }
+
+        form.active {
+            display: block; /* Show only the active form */
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #c7b859;
+            color: #172a3a;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #d4c270;
+        }
+
+        .switch {
+            margin-top: 20px;
+        }
+
+        .switch a {
+            color: #c7b859;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .switch a:hover {
+            text-decoration: underline;
+        }
+         div p{
+            text-align: center;
+        }
+        div a{
+            color:#c7b859;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Welcome to DevStudio AZ</h2>
+        
+        <!-- Login Form -->
+        <form id="login-form" class="active">
+            <h3>Login</h3>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <div class="switch">
+                <p>Don't have an account? <a href="#signup" onclick="showForm('signup')">Sign Up</a></p>
+            </div>
+        </form>
+
+        <!-- Sign-Up Form -->
+        <form id="signup-form">
+            <h3>Sign Up</h3>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Sign Up">
+            <div class="switch">
+                <p>Already have an account? <a href="#login" onclick="showForm('login')">Login</a></p>
+            </div>
+        </form>
+        <button class="google-btn">Continue with Google</button>
+        <button class="facebook-btn">Continue with Facebook</button>
+        <p>Back to <a href="Home.html">DevStudio AK.</a></p>
+    </div>
+
+    <script>
+        function showForm(form) {
+            document.getElementById('login-form').classList.remove('active');
+            document.getElementById('signup-form').classList.remove('active');
+            document.getElementById(form + '-form').classList.add('active');
+        }
+    </script>
+</body>
+</html>

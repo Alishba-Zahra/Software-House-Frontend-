@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DevStudio AZ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background:url('2b.png');
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #1f2937;
+            width: 90%;
+            max-width: 1000px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-box, .info-box {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-box {
+            border-right: 2px solid #c7b859;
+        }
+
+        .form-box h2, .info-box h2 {
+            color: #c7b859;
+            margin-bottom: 20px;
+        }
+
+        .form-box form input, 
+        .form-box form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-box form textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .form-box form input[type="submit"] {
+            background-color: #c7b859;
+            color: #172a3a;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .form-box form input[type="submit"]:hover {
+            background-color: #045D5D ;
+            transform: scale(1.05);
+        }
+
+        .info-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info-box .details {
+            margin-bottom: 20px;
+        }
+
+        .info-box .details p {
+            margin: 5px 0;
+        }
+
+        .info-box iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .form-box, .info-box {
+                width: 100%;
+                border-right: none;
+            }
+
+            .info-box iframe {
+                height: 150px;
+            }
+        }
+        div p{
+            text-align: center;
+        }
+        div a{
+            color:#c7b859;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <!-- Get in Touch Form -->
+        <div class="form-box">
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+            <p>Back to <a href="Home.html">DevStudio AK.</a></p>
+        </div>
+
+        <!-- Contact Information and Map -->
+        <div class="info-box">
+            <div class="details">
+                <h2>Find Us</h2>
+                <p><strong>Address:</strong> 6th-Road, Rawalpindi, Punjab, Pakistan</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> devstudioak@gmail.com</p>
+                <p><strong>Working Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</p>
+            </div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.4597358441165!2d73.06461807556403!3d33.645247773312924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9523ab510d05%3A0xca4a5fd0c50d3085!2sRawalpindi%20Women%20University!5e0!3m2!1sen!2s!4v1710431397227!5m2!1sen!2s" 
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevStudio AZ</title> 
+</head>
+<style>
+    body {
+        width: 100%;
+        height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: teal; 
+    color: #fff; 
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-top: 30px;
+    background-color:#c7b859;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;   
+}
+
+.logo {
+    margin-right: 20px;
+    padding-left: 30px;
+}
+.logo img{
+    width:80px;
+    height: 65px;
+}
+
+nav{
+    font-size: 20px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color:#045D5D ;
+}
+
+.actions button {
+    background-color:#045D5D ;
+    color: #c7b859;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.actions button:hover {
+    background-color: white;
+    color: #045D5D;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #015553;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:15px;
+    z-index: 1001;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+      section{
+         padding: 100px 20px 50px;
+            text-align: center;
+            margin-bottom: 10PX;
+            background:url('4b.png');
+      }
+        section h2{
+            
+             font-size: 40px;
+            margin-bottom: 50px;
+            color: #c7b859;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service {
+            background-color:#045D5D ;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            background-color: #1f2937 ;
+        }
+
+        .service img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            font-size: 18px;
+            color: #c7b859;
+            margin: 10px 0 5px;
+        }
+
+        .service p {
+            font-size: 14px;
+            color: #c7b859;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a{
+    color:#c7b859;
+}
+    </style>
+</head>
+<body>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="fb.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="ista.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="in.png" alt="LinkedIn">
+        </a>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="DevStudio AZ Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Experts.html">Experts</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <button onclick="window.location.href='contact.html'">Contact Us</button>
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </header>
+    <main>
+        <br><br>
+        <section >
+            <h2>OUR SERVICES</h2>
+            <div class="services-list">
+                <div class="service">
+                    <img src="S_web.jpeg" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Responsive websites built for engagement.</p>
+                </div>
+                <div class="service">
+                    <img src="S_app.png" alt="App Development">
+                    <h3>App Development</h3>
+                    <p>Innovative apps designed for your business.</p>
+                </div>
+                <div class="service">
+                    <img src="S3  (1).png" alt="Graphics Designing">
+                    <h3>Graphics Designing</h3>
+                    <p>Visually stunning designs to tell your story.</p>
+                </div>
+                <div class="service">
+                    <img src="S3  (2).png" alt="UI/UX Designing">
+                    <h3>UI/UX Designing</h3>
+                    <p>Creating intuitive, user-centered designs.</p>
+                </div>
+                <div class="service">
+                    <img src="S3  (3).png" alt="Video Editing">
+                    <h3>Video Editing</h3>
+                    <p>Transforming footage into captivating content.</p>
+                </div>
+                <div class="service">
+                    <img src="S3  (4).png" alt="SEO Services">
+                    <h3>SEO Services</h3>
+                    <p>Enhance visibility with proven strategies.</p>
+                </div>
+            
+                <div class="service">
+                <img src="S3  (5).png" alt="Digital Marketing">
+                <h3>Digital Marketing</h3>
+                <p>Boosting your brand with targeted strategies.</p>
+            </div>
+            <div class="service">
+                <img src="S_Email.jpeg" alt="Email Marketing">
+                <h3>Email Marketing</h3>
+                <p>Engaging your audience with personalized emails.</p>
+            </div>
+            <div class="service">
+                <img src="S_Socialmedia.jpeg" alt="Social Media Management">
+                <h3>Social Media Management</h3>
+                <p>Driving engagement through effective social media.</p>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+         <p>&copy; 2024 <a href="Home.html">DevStudio AZ.</a>All rights reserved.</p>
+    </footer>
+</body>
+</html>
